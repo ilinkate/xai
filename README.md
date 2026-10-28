@@ -10,12 +10,13 @@
 
 Откройте терминал и перейдите в рабочую папку.
 Для успешного запуска в рабочей папке должен быть следующий список файлов и папок:
+```bash
 build_dataset.py
 train_model.py
 source-|
        |-source_manifest.json
        |-wordpress_records.jsonl
-
+```
 
 ```bash
 cd "/././."
