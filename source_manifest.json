@@ -1,0 +1,40 @@
+{
+  "description": "Snapshot reconstructed from the existing complete CSV export. Original benchmark JSONL and folds are absent from the current workspace.",
+  "original_export": "data/wordpress_xai_dataset.csv",
+  "benchmark_records_loaded": 24917,
+  "exported_records": 24915,
+  "excluded_unresolved_record_ids_from_prior_audit": [
+    10430,
+    24502
+  ],
+  "partition_provenance": "Original benchmark train/test assignment retained; validation assignment removed and recomputed by GroupShuffleSplit(plugin_slug, test_size=0.1, random_state=42).",
+  "ordering": "Rows follow the complete original CSV. Final export groups train, validation, test, preserving relative order within each split.",
+  "columns": [
+    "record_id",
+    "cve_id",
+    "plugin_slug",
+    "version",
+    "file_path",
+    "function_name",
+    "vulnerability_type",
+    "label_binary",
+    "label_4class",
+    "label_4class_name",
+    "confidence",
+    "clone_family_id",
+    "group_id",
+    "code_hash",
+    "token_len",
+    "code",
+    "fold",
+    "split"
+  ],
+  "source_sha256": "41579a7162dd0e08691393304a1c52fce2a801ec31af3c1fbfab1f49b76117a8",
+  "expected_files_sha256": {
+    "wordpress_xai_dataset.csv": "74f1409e042ba49f8ff543f9a3bb5afda73e69ab8fdd6e12a7f1aaebb47da81f",
+    "wordpress_xai_train.csv": "02e805c5d2fc2885aa5f03056821e1ee265ea7d511938ce06f019ccdd972e013",
+    "wordpress_xai_validation.csv": "599b16ba329b81d145b6d29f58a0df9d3378bda983fe83dd138540ef07a81cdf",
+    "wordpress_xai_test.csv": "67ade442c7b7d149a61c93478443b8e5e51d9fe22490c81d5b8546e0898f567d",
+    "dataset_summary.json": "0d63cb9216a3f97f4afe702a4df563a716e1402cb0915ab0151ca1f591842a4f"
+  }
+}
